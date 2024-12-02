@@ -11,7 +11,7 @@
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.5);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-button:url(./Assets/moonstars.svg);
+  --switch-bg-button: url(./Assets/moonstars.svg);
 }
 
 .light {
@@ -21,7 +21,7 @@
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-button:url(./Assets/sun.svg);
+  --switch-bg-button: url(./Assets/sun.svg);
 }
 
 body {
@@ -34,7 +34,8 @@ body {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: auto;
   margin-top: 56px;
   padding: 0 24px;
@@ -46,7 +47,6 @@ body {
 
 #profile img {
   width: 112px;
-
 }
 
 #profile p {
@@ -55,13 +55,13 @@ body {
   margin-top: 8px;
 }
 
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 24px auto 4px auto;
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: #fff var(--switch-bg-button) no-repeat center;
@@ -74,12 +74,12 @@ body {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -150,5 +150,5 @@ footer {
 }
 
 footer a {
-  color: var(--text-color)
+  color: var(--text-color);
 }
